@@ -5,6 +5,6 @@ import java.util.UUID;
 
 public interface RecommendationClient {
 
-    List<Long> findTweets(UUID userId);
+    List<Long> findTweets(UUID userId, String userDetails);
 
 }

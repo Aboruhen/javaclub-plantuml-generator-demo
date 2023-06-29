@@ -10,7 +10,7 @@ public class RecommendationRestClientImpl implements
     RecommendationRestClient {
 
     @Override
-    public List<Long> callRest(UUID userId) {
+    public List<Long> callRest(UUID userId, String userDetails) {
         return new Random().longs(50, 1, 10_000_000).boxed().toList();
     }
 }

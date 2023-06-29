@@ -15,8 +15,7 @@ public class RecommendationClientImpl implements RecommendationClient {
     }
 
     @Override
-    public List<Long> findTweets(UUID userId) {
-        return recommendationRestClient.callRest(userId);
+    public List<Long> findTweets(UUID userId, String userDetails) {
+        return recommendationRestClient.callRest(userId, userDetails);
     }
-
 }

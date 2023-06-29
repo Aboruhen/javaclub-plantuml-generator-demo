@@ -6,8 +6,6 @@ import java.util.UUID;
 
 public interface TweetViewsService {
 
-
     List<TweetView> userRecommendations(UUID userId);
-
 
 }

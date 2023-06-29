@@ -5,6 +5,6 @@ import java.util.UUID;
 
 public interface RecommendationRestClient {
 
-    List<Long> callRest(UUID userId);
+    List<Long> callRest(UUID userId, String userDetails);
 
 }
